@@ -65,7 +65,42 @@
 // export const employee = new Employee('Dima', 10);
 
 
-// // Correct version2 should look like:
+// // // Correct version2 should look like:
+// interface Person {
+//   name: string;
+//   updateName(name: string): void;
+// }
+
+// interface Payable {
+//   toPay: number;
+//   updateToPay(value: number): void;
+// }
+
+
+// class Employee implements Person, Payable {
+//   constructor(private _name: string, private _toPay: number) {}
+//   public get toPay() {
+//     return this._toPay;
+//   }
+
+//   public get name() {
+//     return this._name;
+//   }
+
+//   updateToPay(value: number): void {
+//     throw (this._toPay = value);
+//   }
+
+//   updateName(name: string): void {
+//     this._name = name;
+//   }
+// }
+
+// export const employee = new Employee('dima', 1000);
+
+
+
+// Correct version2 should look like:
 interface Person {
   name: string;
   updateName(name: string): void;
