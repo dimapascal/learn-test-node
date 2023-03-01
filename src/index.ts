@@ -1,4 +1,2 @@
-import { employee } from "./single-responsiblity/index";
-
-
-console.log('employee', employee);;
+// import { employee } from "./single-responsiblity";
+import "./open-closed";
