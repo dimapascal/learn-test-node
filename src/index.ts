@@ -1,1 +1,1 @@
-import './chain-of-responsibility'
+import './command'
