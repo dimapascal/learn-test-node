@@ -1,1 +1,1 @@
-import './visitor'
+console.log("start")
